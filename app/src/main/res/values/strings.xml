@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Android Calendar</string>
     <string name="spinner_title">List of Months</string>
-    <string name="select_month">Select month:</string>
+    <string name="month_prompt">Select Month</string>
+    <string name="year_prompt">Select Year</string>
 </resources>

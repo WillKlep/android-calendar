@@ -9,18 +9,34 @@
     android:orientation="horizontal"
     android:gravity="center">
 
-    <Spinner
-        android:id="@+id/month"
-        android:contentDescription="@string/select_month"
-        android:prompt="@string/spinner_title"
-        android:layout_width="wrap_content"
+    <!-- Define the dropdowns layout -->
+    <LinearLayout
+        android:id="@+id/layout_dropdowns"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"
-        android:padding="24dp"/>
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent">
 
+
+        <!-- Month spinner -->
+        <Spinner
+            android:id="@+id/spinner_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:prompt="@string/month_prompt"
+            />
+
+        <!-- Year spinner -->
+        <Spinner
+            android:id="@+id/spinner_year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:prompt="@string/year_prompt"/>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
